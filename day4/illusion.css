@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.illusion-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+}
+
+
+.effect{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: black;
+    border-radius:50% ;
+    animation: rotation 3s linear infinite;
+    z-index: 2;
+ 
+}
+
+
+
+.effect::before{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    inset: 15px 5px 0 0;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+
+@keyframes rotation {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
