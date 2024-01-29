@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="artgall.css">
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>ART GALLERY</title>
 </head>
 <body>
@@ -36,33 +36,33 @@
     
 
         <div class="container"  >
-            <div class="description">
+            <div class="description" data-aos="fade-left">
                 <h3>Art <span>Gallery</span> </h3>
             </div>
             <div class="img_box">
                 <div class="img_col">
-                    <img src="images/img1.jpg" alt="">
-                    <img src="images/img2.jpg" alt="">
-                    <img src="images/img3.jpg" alt="">
-                    <img src="images/img4.jpg" alt="">
+                    <img  src="images/img1.jpg" alt="" data-aos="zoom-in">
+                    <img src="images/img2.jpg" alt="" data-aos="zoom-in" >
+                    <img src="images/img3.jpg" alt="" data-aos="zoom-in">
+                    <img src="images/img4.jpg" alt="" data-aos="zoom-in">
                 </div>
                 <div class="img_col">
-                    <img src="images/img5.jpg" alt="">
-                    <img src="images/img6.jpg" alt="">
-                    <img src="images/img7.jpg" alt="">
-                    <img src="images/img8.jpg" alt="">
+                    <img src="images/img5.jpg" alt="" data-aos="zoom-in">
+                    <img src="images/img6.jpg" alt="" data-aos="zoom-in">
+                    <img src="images/img7.jpg" alt="" data-aos="zoom-in">
+                    <img src="images/img8.jpg" alt="" data-aos="zoom-in">
                 </div>
                 <div class="img_col">
-                    <img src="images/img8.jpg" alt="">
-                    <img src="images/img9.jpg" alt="">
-                    <img src="images/img10.jpg" alt="">
-                    <img src="images/img11.jpg" alt="">
+                    <img src="images/img8.jpg" alt="" data-aos="zoom-in">
+                    <img src="images/img9.jpg" alt="" data-aos="zoom-in">
+                    <img src="images/img10.jpg" alt="" data-aos="zoom-in">
+                    <img src="images/img11.jpg" alt="" data-aos="zoom-in">
                 </div>
             </div>
         </div>
 
         <div class="card">
-            <div class="spfcCard">
+            <div class="spfcCard"  data-aos="slide-up">
                 <div class="front">
 
                     <div class="visual">
@@ -80,7 +80,7 @@
                     
                 </div>
             </div>
-            <div class="spfcCard">
+            <div class="spfcCard" data-aos="slide-up">
                 <div class="front">
                     
                     <div class="visual">
@@ -100,7 +100,7 @@
                     touch to your web interface, enhancing overall user satisfaction.
                 </div>
             </div>
-            <div class="spfcCard">
+            <div class="spfcCard" data-aos="slide-up">
                 <div class="front">
 
                     <div class="visual">
@@ -118,7 +118,7 @@
                     and enjoy an effortless browsing experience. Thank you for visiting
                 </div>
             </div>
-            <div class="spfcCard">
+            <div class="spfcCard" data-aos="slide-up">
                 <div class="front">
                     
                     <div class="visual">
@@ -138,7 +138,7 @@
                     visual symphony!
                 </div>
             </div>
-            <div class="spfcCard">
+            <div class="spfcCard" data-aos="slide-up">
                 <div class="front">
                     
                     <div class="visual">
@@ -159,7 +159,7 @@
                     inspired!
                 </div>
             </div>
-            <div class="spfcCard">
+            <div class="spfcCard" data-aos="slide-up">
                 <div class="front">
 
                     <div class="visual">
@@ -185,7 +185,7 @@
                 <h2>Testimonials</h2>
             </div>
         
-            <div class="testimonial">
+            <div class="testimonial" data-aos="fade-left">
                 <img src="images/testi1.jpg" alt="">
                 <div>
                     <h3>Willam K.</h3>
@@ -194,7 +194,7 @@
                 </div>
             </div>
         
-            <div class="testimonial">
+            <div class="testimonial" data-aos="fade-up">
                 <img src="images/testi2.jpg" alt="">
                 <div>
                     <h3>Ayaan</h3>
@@ -204,7 +204,7 @@
                 </div>
             </div>
         
-            <div class="testimonial">
+            <div class="testimonial" data-aos="fade-right">
                 <img src="images/testi3.jpg" alt="">
                 <div>
                     <h3>K. Sangeetha </h3>
@@ -214,30 +214,40 @@
                 </div>
             </div>
         </div>
-        <section class="contact-section">
-            <h2>Contact Us</h2>
-            <div class="contact-form">
+        <section class="contact-section"  >
+            <h2  data-aos="zoom-in-up">Contact Us</h2>
+            <div class="contact-form" data-aos="zoom-in-up">
                 <form >
-                    <div class="form-group">
+                    <div class="form-group" data-aos="zoom-in-up">
                         <label for="name">Your Name:</label>
                         <input type="text" id="name" name="name" required>
                     </div>
         
-                    <div class="form-group">
+                    <div class="form-group"  data-aos="zoom-in-up">
                         <label for="email">Your Email:</label>
                         <input type="email" id="email" name="email" required>
                     </div>
         
-                    <div class="form-group">
+                    <div class="form-group"  data-aos="zoom-in-up">
                         <label for="message">Your Message:</label>
                         <textarea id="message" name="message" rows="4" required></textarea>
                     </div>
         
-                    <div class="form-group">
+                    <div class="form-group"  data-aos="zoom-in-up">
                         <button type="submit">Submit</button>
                     </div>
                 </form>
             </div>
         </section>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration:1000,
+                offest:500,
+                ease:'ease'
+            });
+           
+        </script>
 </body>
 </html>
